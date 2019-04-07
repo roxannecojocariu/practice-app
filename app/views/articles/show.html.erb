@@ -1,0 +1,7 @@
+<%= "Subject: #{@article.subject}" %></br>
+<%= "Body: #{@article.body}" %></br></br>
+
+<% @comments.each do |comment| %>
+  <%= "Name: #{comment.name}" %></br>
+  <%= "Comment: #{comment.comment}" %></br></br>
+<% end %>

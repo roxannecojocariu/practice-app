@@ -7,3 +7,6 @@ rails db:migrate && rails db:rollback && rails db:migrate
 when creating db and adding a table, first go to migrate folder to add columns that include type of column (string, number, etc) and null false, etc at the db level.
 
 model will do the validations at the model level
+
+to add article to comment association, first at db level `t.belongs_to :article, null: false'`
+then model belongs_to, etc.  make sure to do it for both articles and comments
