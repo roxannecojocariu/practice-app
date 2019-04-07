@@ -1,0 +1,9 @@
+use rails command for db
+
+rails generate migration create_articles OR rails g etcetc
+
+rails db:migrate && rails db:rollback && rails db:migrate
+
+when creating db and adding a table, first go to migrate folder to add columns that include type of column (string, number, etc) and null false, etc at the db level.
+
+model will do the validations at the model level
