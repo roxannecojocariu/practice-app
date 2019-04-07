@@ -1,4 +1,6 @@
 <% @articles.each do |article| %>
   <%= "Subject: #{article.subject}" %></br>
   <%= "Body: #{article.body}" %></br></br>
-<% end %>
+  <%= link_to article.subject, article_path(article)%>
+<% end %></br>
+<%= link_to 'New Article', new_article_path, class: 'back' %>

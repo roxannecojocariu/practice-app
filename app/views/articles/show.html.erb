@@ -5,3 +5,12 @@
   <%= "Name: #{comment.name}" %></br>
   <%= "Comment: #{comment.comment}" %></br></br>
 <% end %>
+
+<%= "Submit New Comment:" %></br>
+<%= form_for [@article, @comment] do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-labels' %></br>
+    <%= f.label :comment %>
+    <%= f.text_field :comment, class: 'form-labels' %></br>
+    <%= f.submit "Submit Comment", :class => "form-buttons" %>
+<% end %>
